@@ -7,7 +7,8 @@ class Db
     private function __construct()
     {
         try {
-            $this->_db = new PDO('mysql:host=localhost;dbname=bdbn;charset=utf8', 'root', '');
+            $this->_db = new PDO('mysql:host=ec2-34-253-116-145.eu-west-1.compute.amazonaws.com
+;dbname=d4crfikr27qhql;charset=utf8', 'siriyildxutgcz', 'e1bae29489482027cad1faca72fad9e1f8b6cb3519d46a4c0a2c669b6e4e6446');
             $this->_db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
         } 
 		catch (PDOException $e) {
